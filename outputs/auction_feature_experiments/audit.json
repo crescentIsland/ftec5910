@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-20",
+  "input_sha256": "c05d10bafd4f33aadb2c70ab562a23937bd11c8d32a7c73244c829c06302486e",
+  "input_bid_rows": 10681,
+  "input_auctions": 628,
+  "excluded_inconsistent_auction_ids": [
+    "3019271858"
+  ],
+  "remaining_auctions": 627,
+  "remaining_bid_rows": 10653,
+  "bid_above_final_retained": 2,
+  "primary_stage": 0.5,
+  "supplementary_stages": [
+    0.25,
+    0.75
+  ],
+  "seeds": [
+    5910,
+    5911,
+    5912
+  ],
+  "outer_cv": "3 repeats of duration-stratified 5-fold; same auction assignments across feature groups and stages; items modeled separately",
+  "parameters": {
+    "ridge_alpha": 10,
+    "forest_trees": 100,
+    "forest_max_depth": 5,
+    "forest_min_leaf": 5,
+    "forest_seed": 5910
+  },
+  "tuning": "None; fixed settings. B7 exploratory, not used for claims of confirmed significance.",
+  "definitions": {
+    "recent_new_bidders": "Unique known bidders in (cutoff-0.1*duration, cutoff] absent from all bids at or before window start",
+    "recent_active_bidders": "All unique known bidders in recent window; distinct from truly new bidders",
+    "hhi_change": "Recent-window bidder HHI minus preceding adjacent window bidder HHI; empty window HHI defined as zero, interpret together with counts",
+    "price_lift": "Maximum recorded prefix bid minus opening bid; not necessarily public standing price",
+    "rating_missing_share": "Among identified prefix bidders; missing bidder identities separately counted"
+  },
+  "limitations": [
+    "No calendar timestamps: not forward chronological validation",
+    "Ratings may be collection-time snapshots; historical availability unverified",
+    "Same bidder can occur in different auctions; no bidder-disjoint validation",
+    "Repeated CV and exploratory bootstrap not independent final confirmation",
+    "No fraud labels or causal identification; price/currency provenance unverified",
+    "Earlier analyses already examined this dataset"
+  ],
+  "versions": {
+    "python": "3.12.0",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1"
+  }
+}

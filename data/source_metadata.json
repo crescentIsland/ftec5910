@@ -1,0 +1,12 @@
+{
+  "title": "Online Auctions Dataset",
+  "source": "https://www.kaggle.com/datasets/onlineauctions/online-auctions-dataset",
+  "provider_api": "https://www.kaggle.com/api/v1/datasets/view/onlineauctions/online-auctions-dataset",
+  "licenseName": "Unknown",
+  "checked_on": "2026-10-21",
+  "provider_acknowledgement": "Companion website for Modeling Online Auctions, Wolfgang Jank and Galit Shmueli, Wiley, July 2010",
+  "original_site": "http://www.modelingonlineauctions.com/datasets",
+  "bid_definition": "proxy bid placed by a bidder",
+  "raw_input_sha256": "c05d10bafd4f33aadb2c70ab562a23937bd11c8d32a7c73244c829c06302486e",
+  "raw_data_tracked": false
+}

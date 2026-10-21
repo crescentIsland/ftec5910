@@ -1,0 +1,25 @@
+﻿商品,模型,实验,MAE改善百分比,三个重复均改善,探索区间下界大于0
+Xbox,ridge,B3 B2＋竞争结构,-1.0140468940167078,False,False
+Xbox,ridge,B4 B2＋时间变化,-2.5313524017569424,False,False
+Xbox,ridge,B5 B2＋竞价者评级,-0.1679632771570985,False,False
+Xbox,ridge,B6 全部特征,-4.1307859886699125,False,False
+Xbox,random_forest,B3 B2＋竞争结构,-0.2111639588892325,False,False
+Xbox,random_forest,B4 B2＋时间变化,2.639416788750665,True,False
+Xbox,random_forest,B5 B2＋竞价者评级,-0.132018179500558,False,False
+Xbox,random_forest,B6 全部特征,2.1600044642454703,True,False
+PDA,ridge,B3 B2＋竞争结构,0.6697419517102714,False,False
+PDA,ridge,B4 B2＋时间变化,-1.1298791537714186,False,False
+PDA,ridge,B5 B2＋竞价者评级,-0.6238973489377027,False,False
+PDA,ridge,B6 全部特征,-1.1976030307211905,False,False
+PDA,random_forest,B3 B2＋竞争结构,-1.6475114200608254,False,False
+PDA,random_forest,B4 B2＋时间变化,-1.1985331290235732,False,False
+PDA,random_forest,B5 B2＋竞价者评级,-1.4205971868310636,False,False
+PDA,random_forest,B6 全部特征,-2.6796602957053928,False,False
+Cartier手表,ridge,B3 B2＋竞争结构,-0.2370533450222435,False,False
+Cartier手表,ridge,B4 B2＋时间变化,2.0069441604385854,True,False
+Cartier手表,ridge,B5 B2＋竞价者评级,-0.7228317320493953,False,False
+Cartier手表,ridge,B6 全部特征,-1.7667295403567576,False,False
+Cartier手表,random_forest,B3 B2＋竞争结构,-1.7064401095583708,False,False
+Cartier手表,random_forest,B4 B2＋时间变化,1.8275865572709316,True,False
+Cartier手表,random_forest,B5 B2＋竞价者评级,-1.4960697775950769,False,False
+Cartier手表,random_forest,B6 全部特征,-0.4388234225705974,False,False
